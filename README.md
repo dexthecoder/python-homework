@@ -1,59 +1,93 @@
-# Agar.io Clone with Q-Learning Bots
+# Agar.io Klonu - Q-Learning Botlarla
 
-This is a simple clone of the popular game Agar.io, featuring Q-learning bots that learn to play the game using PyTorch.
+Bu proje, popüler Agar.io oyununun basit bir klonudur ve PyTorch kullanarak oyunu oynamayı öğrenen Q-learning tabanlı yapay zekâ botlarını içermektedir.
 
-## Features
+---
 
-- Player-controlled blob that can move and split
-- AI-controlled bots that learn using Q-learning
-- Collectible food particles
-- Collision detection between players and bots
-- Dynamic size increase when consuming food or other players
+## 🎮 Özellikler
 
-## Requirements
+- Oyuncu tarafından kontrol edilen, hareket edebilen ve bölünebilen hücre
+- Q-Learning kullanan yapay zekâ kontrollü botlar
+- Toplanabilir yiyecek parçacıkları
+- Oyuncular ve botlar arasında çarpışma algılama
+- Yiyecek veya diğer oyuncular tüketildikçe dinamik boyut artışı
 
-- Python 3.8+
+---
+
+## 🧰 Gereksinimler
+
+- Python 3.8 veya üzeri
 - PyGame
 - PyTorch
 - NumPy
 
-## Installation
+---
 
-1. Clone this repository
-2. Install the required packages:
-```bash
+## ⚙️ Kurulum
+
+1. Bu Git deposunu klonlayın:
+   ```bash
+   git clone https://github.com/kullanici-adi/agar-ai-clone.git
+   cd agar-ai-clone
+Gerekli Python paketlerini yükleyin:
+
+bash
+Kopyala
+Düzenle
 pip install -r requirements.txt
-```
+▶️ Nasıl Oynanır?
+Oyunu başlatmak için aşağıdaki komutu çalıştırın:
 
-## How to Play
-
-Run the game:
-```bash
+bash
+Kopyala
+Düzenle
 python game.py
-```
+🎮 Kontroller
+Yön tuşları: Hücrenizi hareket ettirin
 
-### Controls
-- Arrow keys: Move your blob
-- Space: Split your blob (when large enough)
+🧠 Oyun Kuralları
+Yiyecek parçacıklarını toplayarak büyüyün
 
-### Game Rules
-- Collect food particles to grow larger
-- Larger blobs can eat smaller ones
-- Avoid larger blobs that can eat you
-- Watch the AI bots learn and adapt their strategies
+Daha büyük hücreler daha küçükleri yiyebilir
 
-## Q-Learning Implementation
+Daha büyük hücrelerden kaçının
 
-The bots use Deep Q-Learning with the following features:
-- State space includes distances to nearest food, walls, and other players
-- Action space consists of four possible movements (up, down, left, right)
-- Reward function based on:
-  - Proximity to food (positive reward)
-  - Proximity to larger players (negative reward)
-  - Proximity to smaller players (positive reward)
-- Experience replay for better learning
-- Target network for stability
+Botların zamanla öğrenip gelişen stratejilerini gözlemleyin
 
-## Contributing
+🤖 Q-Learning Uygulaması
+Yapay zekâ botları Deep Q-Learning algoritmasını kullanmaktadır. Özellikleri:
 
-Feel free to submit issues and enhancement requests! 
+Durum Uzayı (State Space):
+
+En yakın yiyecek parçacığına olan mesafe
+
+Duvarlara olan mesafe
+
+Diğer oyunculara olan mesafe
+
+Aksiyon Uzayı (Action Space):
+
+Yukarı, aşağı, sola, sağ olmak üzere 4 yönlü hareket
+
+**Ödül Fonksiyonu:
+
+Yiyeceğe yakınlık → pozitif ödül
+
+Daha büyük oyunculara yakınlık → negatif ödül
+
+Daha küçük oyunculara yakınlık → pozitif ödül
+
+Deneyim tekrarı (Experience Replay)
+
+Kararlılığı artırmak için hedef ağ (Target Network)
+
+👥 Ekip Üyeleri
+
+032390060 - Yusuf İslam Çelik
+
+032390080 - Arda İnanç
+
+032390025 - Polat Ceylan
+
+032390079 - Yusuf Cihan Yılmaz
+
